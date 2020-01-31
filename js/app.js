@@ -42,7 +42,8 @@ function render() {
     squares[index].textContent = mark;    // writes an X or an O on board
   });
 
-  message.textContent = win ? `${win} wins!` : `Turn: ${turn}`;
+  message.textContent =
+    win === "T" ? "It's a tie!" : win ? `${win} wins!` : `Turn: ${turn}`;
 }
 
 function takeTurn(e) {
@@ -72,5 +73,5 @@ function getWinner() {
     }
   });
 
-  return winner;
+  return winner ? winner : board.includes("") ? null : "T";
 }
