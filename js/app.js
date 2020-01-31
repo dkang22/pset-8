@@ -22,6 +22,7 @@ const message = document.querySelector("h2");
 ///////////////////// EVENT LISTENERS ///////////////////////////////
 window.onload = init;
 document.getElementById("board").onclick = takeTurn;
+document.getElementById("reset-button").onclick = init;
 
 ///////////////////// FUNCTIONS /////////////////////////////////////
 function init() {
@@ -52,11 +53,13 @@ function takeTurn(e) {
       return square === e.target;
     });
 
-    board[index] = turn;
-    turn = turn === "X" ? "O" : "X";
-    win = getWinner();
+    if (board[index] === "") {
+      board[index] = turn;
+      turn = turn === "X" ? "O" : "X";
+      win = getWinner();
 
-    render();
+      render();
+    }
   }
 }
 
