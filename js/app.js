@@ -42,19 +42,21 @@ function render() {
     squares[index].textContent = mark;    // writes an X or an O on board
   });
 
-  message.textContent = `Turn: ${turn}`;
+  message.textContent = win ? `${win} wins!` : `Turn: ${turn}`;
 }
 
 function takeTurn(e) {
-  let index = squares.findIndex(function(square) {
-    return square === e.target;
-  });
+  if (!win) {
+    let index = squares.findIndex(function(square) {
+      return square === e.target;
+    });
 
-  board[index] = turn;
-  turn = turn === "X" ? "O" : "X";
-  win = getWinner();
+    board[index] = turn;
+    turn = turn === "X" ? "O" : "X";
+    win = getWinner();
 
-  render();
+    render();
+  }
 }
 
 function getWinner() {
