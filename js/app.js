@@ -14,8 +14,8 @@ const winningConditions = [
 let board;
 let turn;
 let win;
-let scoreX;
-let scoreO;
+let scoreX = 0;
+let scoreO = 0;
 
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
@@ -65,8 +65,10 @@ function render() {
     : `Turn: ${turn}`;
   if (win === "X") {
     scoreX++;
+    scoreXMessage.textContent = scoreX;
   } else if (win === "O") {
     scoreO++;
+    scoreOMessage.textContent = scoreO;
   } else {
     //don't change score
   }
