@@ -1,11 +1,13 @@
+* {
+  font-family: 'Acme', sans-serif;
+}
+
 body {
   text-align: center;
-  font-family: "Roboto", monospace;
 }
 
 h1 {
   margin: 0 auto;
-  font-family: "Major Mono Display", monospace;
   font-size: 48px;
   margin: 2%;
 }
@@ -92,4 +94,5 @@ h4 {
 #score-title {
   background-color: white;
   color: black;
-  font-size: 32px;28
+  font-size: 32px;
+}
