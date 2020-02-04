@@ -32,7 +32,19 @@ function init() {
     "", "", ""
   ];
 
-  turn = "X";
+  do {
+    var initialPlayer = prompt("Enter X or O to declare first player: ");
+    if (initialPlayer === null) {
+      break;
+    } else if (initialPlayer === "X" || initialPlayer === "x") {
+      turn = "X";
+    } else if (initialPlayer === "O" || initialPlayer === "o") {
+      turn = "O";
+    } else {
+      //nothing
+    }
+  } while (initialPlayer !== "X" && initialPlayer !== "x" && initialPlayer !== "O" && initialPlayer !== "o");
+
   win = null;
 
   render();
