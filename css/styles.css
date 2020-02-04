@@ -16,6 +16,20 @@ h2 {
   margin: 2%;
 }
 
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .container {
   display: flex;                /* set our display property to use flex-box */
   justify-content: center;      /* center container horizontally */
@@ -48,6 +62,12 @@ h2 {
   cursor: pointer;
 }
 
+.scorebox {
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    height: 100px;
+    user-select: none;
+    width: 225px;
+}
 #reset-button {
   background-color: white;
   border: 1px solid black;
@@ -64,3 +84,12 @@ h2 {
   color: white;
   cursor: pointer;
 }
+
+#score-keeper {
+  padding-top: 15px;
+}
+
+#score-title {
+  background-color: white;
+  color: black;
+  font-size: 32px;28

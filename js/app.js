@@ -14,10 +14,14 @@ const winningConditions = [
 let board;
 let turn;
 let win;
+let scoreX;
+let scoreO;
 
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
+const scoreXMessage = document.querySelector("h3");
+const scoreOMessage = document.querySelector("h4");
 
 ///////////////////// EVENT LISTENERS ///////////////////////////////
 window.onload = init;
@@ -56,7 +60,16 @@ function render() {
   });
 
   message.textContent =
-    win === "T" ? "It's a tie!" : win ? `${win} wins!` : `Turn: ${turn}`;
+    win === "T" ? "It's a tie!"
+    : win ? `${win} wins!`
+    : `Turn: ${turn}`;
+  if (win === "X") {
+    scoreX++;
+  } else if (win === "O") {
+    scoreO++;
+  } else {
+    //don't change score
+  }
 }
 
 function takeTurn(e) {
