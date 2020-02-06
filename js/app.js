@@ -57,7 +57,7 @@ function init() {
 
 function render() {
   board.forEach(function(mark, index) {
-    squares[index].textContent = mark;    // writes an X or an O on board
+    squares[index].textContent = mark;    
   });
 
   message.textContent =

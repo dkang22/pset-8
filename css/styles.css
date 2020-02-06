@@ -37,19 +37,19 @@ h4 {
 }
 
 .container {
-  display: flex;                /* set our display property to use flex-box */
-  justify-content: center;      /* center container horizontally */
-  align-items: center;          /* center content vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .column {
   height: 100%;
   width: 100%;
-  flex-direction: column;       /* align children in columns instead of rows */
+  flex-direction: column;
 }
 
 .wrap {
-  flex-wrap: wrap;              /* tells container to drop down once it reaches max-width */
+  flex-wrap: wrap;      
   height: 456px;
   width: 456px;
 }
