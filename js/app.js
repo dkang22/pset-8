@@ -37,7 +37,7 @@ function init() {
   ];
 
   do {
-    var initialPlayer = prompt("Enter X or O to declare first player: ");
+    var initialPlayer = prompt("Enter X or O to declare the first player: ");
     if (initialPlayer === null) {
       turn = "X";
       break;
@@ -57,7 +57,7 @@ function init() {
 
 function render() {
   board.forEach(function(mark, index) {
-    squares[index].textContent = mark;    
+    squares[index].textContent = mark;
   });
 
   message.textContent =
