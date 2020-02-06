@@ -63,7 +63,7 @@ h4 {
 }
 
 .square:hover {
-  background-color: lightgray;
+  background-color: #C3C3C3;
   cursor: pointer;
 }
 
