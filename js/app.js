@@ -46,7 +46,7 @@ function init() {
     } else if (initialPlayer === "O" || initialPlayer === "o") {
       turn = "O";
     } else {
-      //nothing
+      //intentially blank
     }
   } while (initialPlayer !== "X" && initialPlayer !== "x" && initialPlayer !== "O" && initialPlayer !== "o");
 
@@ -71,7 +71,7 @@ function render() {
     scoreO++;
     scoreOMessage.textContent = scoreO;
   } else {
-    //don't change score
+    //if there is a tie, do not change score
   }
 }
 
