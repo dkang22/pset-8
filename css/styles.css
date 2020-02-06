@@ -1,6 +1,7 @@
 * {
   font-family: 'Acme', sans-serif;
-  background-color: blue;
+  background-color: black;
+  color: white;
 }
 
 body {
@@ -53,7 +54,7 @@ h4 {
 }
 
 .square {
-  border: 1px solid rgba(0, 0, 0, 0.75);
+  border: 1px solid white;
   height: 150px;
   user-select: none;
   width: 150px;
@@ -67,16 +68,16 @@ h4 {
 }
 
 .scorebox {
-    border: 1px solid rgba(0, 0, 0, 0.75);
-    height: 90px;
-    user-select: none;
-    width: 225px;
-    background-color: blue;
+  border: 1px solid white;
+  height: 90px;
+  user-select: none;
+  width: 225px;
+  background-color: blue;
 }
 #reset-button {
-  background-color: blue;
-  border: 1px solid black;
-  color: black;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
   font-size: 21px;
   line-height: 55px;
   margin: 1%;
@@ -85,8 +86,8 @@ h4 {
 }
 
 #reset-button:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   cursor: pointer;
 }
 
@@ -95,7 +96,7 @@ h4 {
 }
 
 #score-title {
-  background-color: blue;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 30px;
 }
